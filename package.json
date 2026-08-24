@@ -20,11 +20,15 @@
     "packageManager": {
       "name": "npm",
       "version": "11.18.0",
-       "onFail": "warn"
+      "onFail": "warn"
     }
   },
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@prisma/client": "^7.9.1",
+    "prisma": "^7.9.1"
+  }
 }
