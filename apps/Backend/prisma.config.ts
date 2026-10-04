@@ -11,4 +11,4 @@ export default defineConfig({
   datasource: {
     url: "postgresql://postgres.iujfyvqraisphuzgoakk:meritrade001212@aws-0-ap-northeast-1.pooler.supabase.com:5432/postgres",
   },
-});
+});  
