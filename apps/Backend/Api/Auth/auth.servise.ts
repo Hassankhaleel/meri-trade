@@ -5,7 +5,9 @@ const adpater = new PrismaPg({ connectionString: "postgresql://postgres.iujfyvqr
 const prisma = new PrismaClient({ adapter: adpater });
 
 const authService = {
+    async singUp() {
 
+    }
 
 }
 export default authService;
