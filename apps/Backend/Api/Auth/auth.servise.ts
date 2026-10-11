@@ -5,9 +5,26 @@ const adpater = new PrismaPg({ connectionString: "postgresql://postgres.iujfyvqr
 const prisma = new PrismaClient({ adapter: adpater });
 
 const authService = {
-    async singUp() {
+    async singUp(
+        name: string,
+        email: string,
+        password: string
+    ) {
+        await prisma.user.create({
+            data: {
+                name,
+                email,
+                password
+            }
+        })
+    },
+    async login(
+        email: string,
+        password: string,
+    ) {
 
     }
+
 
 }
 export default authService;
