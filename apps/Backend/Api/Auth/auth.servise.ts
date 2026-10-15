@@ -16,13 +16,14 @@ const authService = {
                 email,
                 password
             }
-        })
+        });
     },
+
     async login(
         email: string,
         password: string,
     ) {
-
+        await prism
     }
 
 
