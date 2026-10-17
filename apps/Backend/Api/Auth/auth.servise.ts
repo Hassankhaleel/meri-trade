@@ -12,18 +12,17 @@ const authService = {
     ) {
         await prisma.user.create({
             data: {
-                name,
-                email,
-                password
+                name, email, password
             }
-        });
+
+        })
     },
 
     async login(
         email: string,
         password: string,
     ) {
-        await prism
+
     }
 
 
